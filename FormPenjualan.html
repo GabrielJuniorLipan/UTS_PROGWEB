@@ -1,0 +1,176 @@
+<!-- JS didalam HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.container{
+			width:650px;
+			margin: auto;
+			border: 1px dotted #blue;
+			padding: 10px;
+			background: grey;
+			color:#fff;
+		}
+
+		h2{
+			text-align: center;
+			text-decoration: underline;
+
+
+		}
+
+		table{
+			background: DeepPink;
+			margin:auto;
+
+		}
+
+		td{
+			padding: 10px
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Form Pemjualan</h2>
+		<table border="1">
+			<tr>
+				<th>No </th>
+				<th>Nama Barang</th>
+				<th>harga barang</th>
+				<th>jumlah barang</th>
+			</tr>
+
+			<tr>
+				<th>1</th>
+				<th>Kukis</th>
+				<th>@<input type="text" name="harga" id="algoritma" size="7" value="15000" readonly></th>
+				<th>@<input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+			</tr>
+
+
+			<tr>
+				
+				<th colspan="3" style="text-align:right">jumlah total</th>
+				<th>@<input type="text" name="total_jumlah" id="total" size="7" value="" readonly></th>
+			</tr>
+		</table>
+		<br><br>
+		<input type="button" onclick="window.print()" value="cetak">
+
+		<script type="text/javascript">
+		function total() {
+		var valgoritma = 15000 * parseInt(document.getElementById('harga_algoritma').value);
+
+		var jumlah_harga = valgoritma;
+
+		document.getElementById('total').value = jumlah_harga;
+		}
+		
+		</script>
+	</div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <script src="fontawesome/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fa fa-arrow-right" id="open"></i>
+        </label>
+        <div class="sidebar">
+            <div class="top">
+                Progweb
+            </div>  
+            <ul>
+                <li><a class="#" href="Index.html"><i class="#"></i> Menu Utama</a></li>
+                <li><a class="#" href="FormPenjualan.html"><i class="#"></i> Penjualan</a></li>
+                <li><a class="#" href="TentangSaya.html"><i class="#"></i> Tentang Saya</a></li>
+            </ul>
+        </div>
+        </section>
+    </main>
+</body>
+<style>
+    .container{
+        width:650px;
+        margin: auto;
+        border: 1px dotted #blue;
+        padding: 10px;
+        background: grey;
+        color:#fff;
+    }
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+
+
+    }
+
+    table{
+        background: DeepPink;
+        margin:auto;
+
+    }
+
+    td{
+        padding: 10px
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Form Pemjualan</h2>
+    <table border="1">
+        <tr>
+            <th>No </th>
+            <th>Nama Barang</th>
+            <th>harga barang</th>
+            <th>jumlah barang</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Kukis</th>
+            <th>@<input type="text" name="harga" id="algoritma" size="7" value="15000" readonly></th>
+            <th>@<input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+        </tr>
+
+
+        <tr>
+            
+            <th colspan="3" style="text-align:right">jumlah total</th>
+            <th>@<input type="text" name="total_jumlah" id="total" size="7" value="" readonly></th>
+        </tr>
+    </table>
+    <br><br>
+    <input type="button" onclick="window.print()" value="cetak">
+
+    <script type="text/javascript">
+    function total() {
+    var valgoritma = 15000 * parseInt(document.getElementById('harga_algoritma').value);
+
+    var jumlah_harga = valgoritma;
+
+    document.getElementById('total').value = jumlah_harga;
+    }
+    
+    </script>
+</div>
+</body>
+</html>
